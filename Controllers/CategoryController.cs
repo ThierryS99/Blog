@@ -11,12 +11,12 @@ namespace Blog.Controllers
     public class CategoryController : ControllerBase
     {
         [HttpGet("v1/categories")]
-        public async Task<IActionResult> GetAsync([FromServices] BlogDataContext context)
+        public async Task<IActionResult> GetAsync(
+            [FromServices] BlogDataContext context)
         {
             try
             {
                 var categories = await context.Categories.ToListAsync();
-
                 return Ok(new ResultViewModel<List<Category>>(categories));
             }
             catch (Exception ex)
