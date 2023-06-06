@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Drawing;
 
-namespace Blog.ViewModels
+namespace Blog.ViewModels.Accounts
 {
     public class LoginViewModel
     {
