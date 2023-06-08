@@ -142,6 +142,7 @@ namespace Blog.Controllers
             {
                 return StatusCode(500, new ResultViewModel<string>("05X05 - Falha interna."));
             }
+            return Ok();
         }
     }
 }
